@@ -4,7 +4,7 @@
 	<xsl:template match="/">
 	<rss>
 	<channel>
-		<xsl:for-each select="rss/channel/item">
+		<xsl:for-each select="rss/channel/item"> <!--  rss/channel/item[status[@id='1']]  -->
 			<xsl:variable name="project">
 				<xsl:choose>
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'RocketMQ']) &gt; 0">

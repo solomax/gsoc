@@ -11,11 +11,13 @@
 
 	<!-- project emails -->
 	<xsl:variable name="emails">
-		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
+		<entry key="IOTDB">dev (at) iotdb.apache.org</entry>
+		<entry key="FINERACT">dev (at) fineract.apache.org</entry>
+		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
+		<entry key="CAMEL">dev (at) camel.apache.org</entry>
 		<entry key="BEAM">dev (at) beam.apache.org</entry>
 		<entry key="AIRFLOW">dev (at) airflow.apache.org</entry>
-		<entry key="CAMEL">dev (at) camel.apache.org</entry>
-		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
+		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">
