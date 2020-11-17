@@ -24,6 +24,9 @@
 		<entry key="FINCN">dev (at) fineract.apache.org</entry>
 		<entry key="OWB">dev (at) openwebbeans.apache.org</entry>
 		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
+		<entry key="HUDI">dev (at) hudi.apache.org</entry>
+		<entry key="SKYWALKING">dev (at) skywalking.apache.org</entry>
+		<entry key="SHARDINGSPHERE">dev (at) shardingsphere.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">
@@ -40,10 +43,10 @@
 	<p class="toc_title">Contents</p>
 	<ul class="toc_list">
 		<xsl:for-each-group select="item" group-by="project/@key">
-			<li><a href="#{replace(concat('GSoC2020Ideaslist-', project/text()), ' ', '')}"><xsl:value-of select="project/text()"/></a></li>
+			<li><a href="#{replace(concat('GSoC2021Ideaslist-', project/text()), ' ', '')}"><xsl:value-of select="project/text()"/></a></li>
 			<xsl:for-each select="current-group()">
 			<ul>
-				<li><a href="#{replace(concat('GSoC2020Ideaslist-', summary/text()), ' ', '')}"><xsl:value-of select="summary/text()"/></a></li>
+				<li><a href="#{replace(concat('GSoC2021Ideaslist-', summary/text()), ' ', '')}"><xsl:value-of select="summary/text()"/></a></li>
 			</ul>
 			</xsl:for-each>
 		</xsl:for-each-group>
@@ -53,10 +56,10 @@
 
 	<xsl:template match="rss/channel" mode="content">
 		<xsl:for-each-group select="item" group-by="project/@key">
-			<h1 id="{replace(concat('GSoC2020Ideaslist-', project/text()), ' ', '')}"><xsl:value-of select="project/text()"/></h1> <!-- {current-grouping-key()} -->
+			<h1 id="{replace(concat('GSoC2021Ideaslist-', project/text()), ' ', '')}"><xsl:value-of select="project/text()"/></h1> <!-- {current-grouping-key()} -->
 			<xsl:for-each select="current-group()">
 				<div class="item" style="{$style-item}">
-					<h3 id="{replace(concat('GSoC2020Ideaslist-', summary/text()), ' ', '')}" style="{$style-item_h3}"><a href="{link/text()}"><xsl:value-of select="summary/text()"/></a></h3> <!-- {key/text()} -->
+					<h3 id="{replace(concat('GSoC2021Ideaslist-', summary/text()), ' ', '')}" style="{$style-item_h3}"><a href="{link/text()}"><xsl:value-of select="summary/text()"/></a></h3> <!-- {key/text()} -->
 					<div class="desc" style="{$style-item_desc}">
 						<xsl:value-of select="description" disable-output-escaping="yes"/>
 					</div>

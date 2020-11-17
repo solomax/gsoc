@@ -10,6 +10,12 @@
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'ROCKETMQ'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'SkyWalking']) &gt; 0">
+						<xsl:value-of select="'SKYWALKING'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'ShardingSphere']) &gt; 0">
+						<xsl:value-of select="'SHARDINGSPHERE'"/>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/@key"/>
 					</xsl:otherwise>
@@ -19,6 +25,12 @@
 				<xsl:choose>
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'RocketMQ'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'SkyWalking']) &gt; 0">
+						<xsl:value-of select="'SkyWalking'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'ShardingSphere']) &gt; 0">
+						<xsl:value-of select="'ShardingSphere'"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/text()"/>
