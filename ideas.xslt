@@ -27,6 +27,7 @@
 		<entry key="HUDI">dev (at) hudi.apache.org</entry>
 		<entry key="SKYWALKING">dev (at) skywalking.apache.org</entry>
 		<entry key="SHARDINGSPHERE">dev (at) shardingsphere.apache.org</entry>
+		<entry key="TRAFFICCONTROL">dev (at) trafficcontrol.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">

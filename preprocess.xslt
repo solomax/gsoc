@@ -16,6 +16,9 @@
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'ShardingSphere']) &gt; 0">
 						<xsl:value-of select="'SHARDINGSPHERE'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
+						<xsl:value-of select="'TRAFFICCONTROL'"/>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/@key"/>
 					</xsl:otherwise>
@@ -31,6 +34,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'ShardingSphere']) &gt; 0">
 						<xsl:value-of select="'ShardingSphere'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
+						<xsl:value-of select="'TrafficControl'"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/text()"/>
