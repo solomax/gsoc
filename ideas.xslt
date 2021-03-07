@@ -18,6 +18,7 @@
 		<entry key="GORA">dev (at) gora.apache.org</entry>
 		<entry key="IOTDB">dev (at) iotdb.apache.org</entry>
 		<entry key="NEMO">dev (at) nemo.apache.org</entry>
+		<entry key="NUTTX">dev (at) nuttx.apache.org</entry>
 		<entry key="BEAM">dev (at) beam.apache.org</entry>
 		<entry key="CAMEL">dev (at) camel.apache.org</entry>
 		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
