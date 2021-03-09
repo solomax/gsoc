@@ -29,6 +29,7 @@
 		<entry key="SKYWALKING">dev (at) skywalking.apache.org</entry>
 		<entry key="SHARDINGSPHERE">dev (at) shardingsphere.apache.org</entry>
 		<entry key="TRAFFICCONTROL">dev (at) trafficcontrol.apache.org</entry>
+		<entry key="CASSANDRA">dev (at) cassandra.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">
@@ -67,12 +68,12 @@
 					</div>
 					<div class="actions" style="{$style-item_actions}">
 						<div>
-							<strong>Difficulty:</strong><xsl:text> </xsl:text><xsl:value-of select="priority/text()"/>
+							<strong>Difficulty:</strong><xsl:text> </xsl:text><xsl:value-of select="difficulty/text()"/>
 						</div>
 						<div>
 							<div><strong>Potential mentors:</strong></div>
 							<div style="{$style-item_actions_mentors}">
-								<i><xsl:value-of select="reporter/text()"/></i>,<xsl:text> </xsl:text>mail: <xsl:value-of select="reporter/@username"/><xsl:text> </xsl:text>(at)<xsl:text> </xsl:text>apache.org
+								<i><xsl:value-of select="mentor/text()"/></i>,<xsl:text> </xsl:text>mail: <xsl:value-of select="mentor/@username"/><xsl:text> </xsl:text>(at)<xsl:text> </xsl:text>apache.org
 							</div>
 							<div style="{$style-item_actions_mentors}">
 								<i>Project Devs</i>,<xsl:text> </xsl:text>mail: <xsl:value-of select="$emails/entry[@key=current-grouping-key()]"/>

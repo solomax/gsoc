@@ -43,14 +43,44 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
+			<xsl:variable name="difficulty">
+				<xsl:choose>
+					<xsl:when test="project/@key='CASSANDRA'">
+						<xsl:value-of select="customfields/customfield[@id = 'customfield_12313821']/customfieldvalues/customfieldvalue"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="priority/text()"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<xsl:variable name="mentorName">
+				<xsl:choose>
+					<xsl:when test="project/@key='CASSANDRA'">
+						<xsl:value-of select="customfields/customfield[@id = 'customfield_12313420']/customfieldvalues/customfieldvalue[1]"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="reporter/text()"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<xsl:variable name="mentorLogin">
+				<xsl:choose>
+					<xsl:when test="project/@key='CASSANDRA'">
+						<xsl:value-of select="customfields/customfield[@id = 'customfield_12313420']/customfieldvalues/customfieldvalue[1]"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="reporter/@username"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
 			<item>
 				<project key="{$project}"><xsl:value-of select="$projectName"/></project>
 				<xsl:copy-of select="title"/>
 				<xsl:copy-of select="link"/>
 				<xsl:copy-of select="summary"/>
 				<xsl:copy-of select="description"/>
-				<xsl:copy-of select="priority"/>
-				<xsl:copy-of select="reporter"/>
+                                <difficulty><xsl:value-of select="$difficulty"/></difficulty>
+                                <mentor username="{$mentorLogin}"><xsl:value-of select="$mentorName"/></mentor>
 			</item>
 		</xsl:for-each>
 	</channel>
