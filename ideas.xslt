@@ -30,6 +30,7 @@
 		<entry key="SHARDINGSPHERE">dev (at) shardingsphere.apache.org</entry>
 		<entry key="TRAFFICCONTROL">dev (at) trafficcontrol.apache.org</entry>
 		<entry key="CASSANDRA">dev (at) cassandra.apache.org</entry>
+		<entry key="CLOUDSTACK">dev (at) cloudstack.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">
