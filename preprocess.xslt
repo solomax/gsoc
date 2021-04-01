@@ -22,6 +22,9 @@
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IOTDB'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'DolphinScheduler']) &gt; 0">
+						<xsl:value-of select="'DOLPHINSCHEDULER'"/>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/@key"/>
 					</xsl:otherwise>
@@ -43,6 +46,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IoTDB'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'DolphinScheduler']) &gt; 0">
+						<xsl:value-of select="'DolphinScheduler'"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/text()"/>
