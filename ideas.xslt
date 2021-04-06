@@ -32,6 +32,7 @@
 		<entry key="CASSANDRA">dev (at) cassandra.apache.org</entry>
 		<entry key="CLOUDSTACK">dev (at) cloudstack.apache.org</entry>
 		<entry key="DOLPHINSCHEDULER">dev (at) dolphinscheduler.apache.org</entry>
+		<entry key="COUCHDB">dev (at) couchdb.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">
