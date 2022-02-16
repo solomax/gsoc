@@ -91,14 +91,25 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
+			<xsl:variable name="projectSize">
+				<xsl:choose>
+					<xsl:when test="count(labels/label[text() = 'part-time']) &gt; 0">
+						<xsl:value-of select="'~175 hour (medium)'"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="'~350 hour (large)'"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
 			<item>
 				<project key="{$project}"><xsl:value-of select="$projectName"/></project>
 				<xsl:copy-of select="title"/>
 				<xsl:copy-of select="link"/>
 				<xsl:copy-of select="summary"/>
 				<xsl:copy-of select="description"/>
-                                <difficulty><xsl:value-of select="$difficulty"/></difficulty>
-                                <mentor username="{$mentorLogin}"><xsl:value-of select="$mentorName"/></mentor>
+				<difficulty><xsl:value-of select="$difficulty"/></difficulty>
+				<mentor username="{$mentorLogin}"><xsl:value-of select="$mentorName"/></mentor>
+				<size><xsl:value-of select="$projectSize"/></size>
 			</item>
 		</xsl:for-each>
 	</channel>

@@ -74,6 +74,9 @@
 							<strong>Difficulty:</strong><xsl:text> </xsl:text><xsl:value-of select="difficulty/text()"/>
 						</div>
 						<div>
+							<strong>Project size:</strong><xsl:text> </xsl:text><xsl:value-of select="size/text()"/>
+						</div>
+						<div>
 							<div><strong>Potential mentors:</strong></div>
 							<div style="{$style-item_actions_mentors}">
 								<i><xsl:value-of select="mentor/text()"/></i>,<xsl:text> </xsl:text>mail: <xsl:value-of select="mentor/@username"/><xsl:text> </xsl:text>(at)<xsl:text> </xsl:text>apache.org
