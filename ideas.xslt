@@ -25,6 +25,7 @@
 		<entry key="GORA">dev (at) gora.apache.org</entry>
 		<entry key="HUDI">dev (at) hudi.apache.org</entry>
 		<entry key="IOTDB">dev (at) iotdb.apache.org</entry>
+		<entry key="JAMES">dev (at) james.apache.org</entry>
 		<entry key="MATH">dev (at) commons.apache.org</entry>
 		<entry key="NEMO">dev (at) nemo.apache.org</entry>
 		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
@@ -33,6 +34,7 @@
 		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
 		<entry key="SKYWALKING">dev (at) skywalking.apache.org</entry>
 		<entry key="SHARDINGSPHERE">dev (at) shardingsphere.apache.org</entry>
+		<entry key="SHENYU">dev (at) shenyu.apache.org</entry>
 		<entry key="TRAFFICCONTROL">dev (at) trafficcontrol.apache.org</entry>
 	</xsl:variable>
 
