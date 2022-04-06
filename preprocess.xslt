@@ -1,6 +1,21 @@
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+<xsl:stylesheet
+		xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema"
+		xmlns:gsoc="http://github.com/solomax/gsoc"
+		exclude-result-prefixes="gsoc"
+		version="2.0">
 	<xsl:output method="xml"/>
 
+	<xsl:function name="gsoc:prepTitle">
+		<xsl:param name="title" as="xs:string"/>
+		<xsl:sequence
+			select="replace($title, ':', '')" />
+	</xsl:function>
+	<xsl:function name="gsoc:getHref">
+		<xsl:param name="name" as="xs:string"/>
+		<xsl:sequence
+			select="gsoc:prepTitle(replace(concat('#GSoC2022Ideaslist-', $name), ' ', ''))" />
+	</xsl:function>
 	<xsl:template match="/">
 	<rss>
 	<channel>
@@ -114,10 +129,10 @@
 				</xsl:choose>
 			</xsl:variable>
 			<item>
-				<project key="{$project}"><xsl:value-of select="$projectName"/></project>
+				<project key="{$project}" href="{gsoc:getHref($projectName)}"><xsl:value-of select="gsoc:prepTitle($projectName)"/></project>
 				<xsl:copy-of select="title"/>
 				<xsl:copy-of select="link"/>
-				<xsl:copy-of select="summary"/>
+				<summary href="{gsoc:getHref(summary/text())}"><xsl:value-of select="gsoc:prepTitle(summary/text())"/></summary>
 				<xsl:copy-of select="description"/>
 				<difficulty><xsl:value-of select="$difficulty"/></difficulty>
 				<mentor username="{$mentorLogin}"><xsl:value-of select="$mentorName"/></mentor>

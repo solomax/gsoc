@@ -52,10 +52,10 @@
 	<p class="toc_title">Contents</p>
 	<ul class="toc_list">
 		<xsl:for-each-group select="item" group-by="project/@key">
-			<li><a href="#{replace(concat('GSoC2022Ideaslist-', project/text()), ' ', '')}"><xsl:value-of select="project/text()"/></a></li>
+			<li><a href="{project/@href}"><xsl:value-of select="project/text()"/></a></li>
 			<xsl:for-each select="current-group()">
 			<ul>
-				<li><a href="#{replace(concat('GSoC2022Ideaslist-', summary/text()), ' ', '')}"><xsl:value-of select="summary/text()"/></a></li>
+				<li><a href="{summary/@href}"><xsl:value-of select="summary/text()"/></a></li>
 			</ul>
 			</xsl:for-each>
 		</xsl:for-each-group>
@@ -65,10 +65,10 @@
 
 	<xsl:template match="rss/channel" mode="content">
 		<xsl:for-each-group select="item" group-by="project/@key">
-			<h1 id="{replace(concat('GSoC2022Ideaslist-', project/text()), ' ', '')}"><xsl:value-of select="project/text()"/></h1> <!-- {current-grouping-key()} -->
+			<h1 id="{project/@href}"><xsl:value-of select="project/text()"/></h1> <!-- {current-grouping-key()} -->
 			<xsl:for-each select="current-group()">
 				<div class="item" style="{$style-item}">
-					<h3 id="{replace(concat('GSoC2022Ideaslist-', summary/text()), ' ', '')}" style="{$style-item_h3}"><a href="{link/text()}"><xsl:value-of select="summary/text()"/></a></h3> <!-- {key/text()} -->
+					<h3 id="{summary/@href}" style="{$style-item_h3}"><a href="{link/text()}"><xsl:value-of select="summary/text()"/></a></h3> <!-- {key/text()} -->
 					<div class="desc" style="{$style-item_desc}">
 						<xsl:value-of select="description" disable-output-escaping="yes"/>
 					</div>
