@@ -48,6 +48,7 @@
 	</xsl:template>
 	
 	<xsl:template match="rss/channel" mode="toc">
+	<p style="color: red; font: bold;">This page is auto-generated! Please do NOT edit it, all changes will be lost on next update</p>
 	<div id="toc_container" style="{$style-toc-container}">
 	<p class="toc_title">Contents</p>
 	<ul class="toc_list">
