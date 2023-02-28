@@ -14,7 +14,7 @@
 	<xsl:function name="gsoc:getHref">
 		<xsl:param name="name" as="xs:string"/>
 		<xsl:sequence
-			select="gsoc:prepTitle(replace(concat('#GSoC2022Ideaslist-', $name), ' ', ''))" />
+			select="gsoc:prepTitle(replace(concat('#GSoC2023Ideaslist-', $name), ' ', ''))" />
 	</xsl:function>
 	<xsl:template match="/">
 	<rss>
@@ -49,6 +49,12 @@
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
 						<xsl:value-of select="'TRAFFICCONTROL'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'Beam']) &gt; 0">
+						<xsl:value-of select="'BEAM'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'StreamPipes']) &gt; 0">
+						<xsl:value-of select="'STREAMPIPES'"/>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/@key"/>
 					</xsl:otherwise>
@@ -82,6 +88,12 @@
 					</xsl:when>
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
 						<xsl:value-of select="'TrafficControl'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'Beam']) &gt; 0">
+						<xsl:value-of select="'Beam'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'StreamPipes']) &gt; 0">
+						<xsl:value-of select="'StreamPipes'"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/text()"/>

@@ -32,9 +32,10 @@
 		<entry key="NUTTX">dev (at) nuttx.apache.org</entry>
 		<entry key="OWB">dev (at) openwebbeans.apache.org</entry>
 		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
-		<entry key="SKYWALKING">dev (at) skywalking.apache.org</entry>
 		<entry key="SHARDINGSPHERE">dev (at) shardingsphere.apache.org</entry>
 		<entry key="SHENYU">dev (at) shenyu.apache.org</entry>
+		<entry key="SKYWALKING">dev (at) skywalking.apache.org</entry>
+		<entry key="STREAMPIPES">dev (at) streampipes.apache.org</entry>
 		<entry key="TRAFFICCONTROL">dev (at) trafficcontrol.apache.org</entry>
 	</xsl:variable>
 
