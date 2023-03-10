@@ -55,6 +55,9 @@
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'StreamPipes']) &gt; 0">
 						<xsl:value-of select="'STREAMPIPES'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'EventMesh']) &gt; 0">
+						<xsl:value-of select="'EVENTMESH'"/>
+					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/@key"/>
 					</xsl:otherwise>
@@ -94,6 +97,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'StreamPipes']) &gt; 0">
 						<xsl:value-of select="'StreamPipes'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='COMDEV' and count(labels/label[text() = 'EventMesh']) &gt; 0">
+						<xsl:value-of select="'EventMesh'"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/text()"/>
