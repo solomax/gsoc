@@ -22,8 +22,14 @@
 		<xsl:for-each select="rss/channel/item"> <!--  rss/channel/item[status[@id='1']]  -->
 			<xsl:variable name="project">
 				<xsl:choose>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Airflow']) &gt; 0">
+						<xsl:value-of select="'AIRFLOW'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'APISIX']) &gt; 0">
 						<xsl:value-of select="'APISIX'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Beam']) &gt; 0">
+						<xsl:value-of select="'BEAM'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'CouchDB']) &gt; 0">
 						<xsl:value-of select="'COUCHDB'"/>
@@ -31,11 +37,20 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'DolphinScheduler']) &gt; 0">
 						<xsl:value-of select="'DOLPHINSCHEDULER'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Doris']) &gt; 0">
+						<xsl:value-of select="'DORIS'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
+						<xsl:value-of select="'EVENTMESH'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IOTDB'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'ROCKETMQ'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'SeaTunnel']) &gt; 0">
+						<xsl:value-of select="'SEATUNNEL'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'ShardingSphere']) &gt; 0">
 						<xsl:value-of select="'SHARDINGSPHERE'"/>
@@ -46,20 +61,14 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'SkyWalking']) &gt; 0">
 						<xsl:value-of select="'SKYWALKING'"/>
 					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
-						<xsl:value-of select="'TRAFFICCONTROL'"/>
-					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Beam']) &gt; 0">
-						<xsl:value-of select="'BEAM'"/>
-					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'StreamPipes']) &gt; 0">
 						<xsl:value-of select="'STREAMPIPES'"/>
 					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
-						<xsl:value-of select="'EVENTMESH'"/>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Teaclave']) &gt; 0">
+						<xsl:value-of select="'TEACLAVE'"/>
 					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Doris']) &gt; 0">
-						<xsl:value-of select="'DORIS'"/>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
+						<xsl:value-of select="'TRAFFICCONTROL'"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/@key"/>
@@ -68,8 +77,14 @@
 			</xsl:variable>
 			<xsl:variable name="projectName">
 				<xsl:choose>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Airflow']) &gt; 0">
+						<xsl:value-of select="'Airflow'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'APISIX']) &gt; 0">
 						<xsl:value-of select="'APISIX'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Beam']) &gt; 0">
+						<xsl:value-of select="'Beam'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'CouchDB']) &gt; 0">
 						<xsl:value-of select="'CouchDB'"/>
@@ -77,11 +92,20 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'DolphinScheduler']) &gt; 0">
 						<xsl:value-of select="'DolphinScheduler'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Doris']) &gt; 0">
+						<xsl:value-of select="'Doris'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
+						<xsl:value-of select="'EventMesh'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IoTDB'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'RocketMQ'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'SeaTunnel']) &gt; 0">
+						<xsl:value-of select="'SeaTunnel'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'ShardingSphere']) &gt; 0">
 						<xsl:value-of select="'ShardingSphere'"/>
@@ -92,20 +116,14 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'SkyWalking']) &gt; 0">
 						<xsl:value-of select="'SkyWalking'"/>
 					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
-						<xsl:value-of select="'TrafficControl'"/>
-					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Beam']) &gt; 0">
-						<xsl:value-of select="'Beam'"/>
-					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'StreamPipes']) &gt; 0">
 						<xsl:value-of select="'StreamPipes'"/>
 					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
-						<xsl:value-of select="'EventMesh'"/>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Teaclave']) &gt; 0">
+						<xsl:value-of select="'Teaclave'"/>
 					</xsl:when>
-					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Doris']) &gt; 0">
-						<xsl:value-of select="'Doris'"/>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'TrafficControl']) &gt; 0">
+						<xsl:value-of select="'TrafficControl'"/>
 					</xsl:when>
 					<xsl:otherwise>
 						<xsl:value-of select="project/text()"/>
