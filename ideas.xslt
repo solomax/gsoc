@@ -32,6 +32,7 @@
 		<entry key="NEMO">dev (at) nemo.apache.org</entry>
 		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
 		<entry key="NUTTX">dev (at) nuttx.apache.org</entry>
+		<entry key="OPENMEETINGS">dev (at) openmeetings.apache.org</entry>
 		<entry key="OWB">dev (at) openwebbeans.apache.org</entry>
 		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
 		<entry key="SEATUNNEL">dev (at) seatunnel.apache.org</entry>
