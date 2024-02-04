@@ -46,6 +46,12 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IOTDB'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Kvrocks']) &gt; 0">
+						<xsl:value-of select="'KVROCKS'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
+						<xsl:value-of select="'OPENDAL'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'ROCKETMQ'"/>
 					</xsl:when>
@@ -100,6 +106,12 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IoTDB'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Kvrocks']) &gt; 0">
+						<xsl:value-of select="'Kvrocks'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
+						<xsl:value-of select="'OpenDAL'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'RocketMQ'"/>

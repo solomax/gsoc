@@ -28,10 +28,12 @@
 		<entry key="HUDI">dev (at) hudi.apache.org</entry>
 		<entry key="IOTDB">dev (at) iotdb.apache.org</entry>
 		<entry key="JAMES">dev (at) james.apache.org</entry>
+		<entry key="KVROCKS">dev (at) kvrocks.apache.org</entry>
 		<entry key="MATH">dev (at) commons.apache.org</entry>
 		<entry key="NEMO">dev (at) nemo.apache.org</entry>
 		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
 		<entry key="NUTTX">dev (at) nuttx.apache.org</entry>
+		<entry key="OPENDAL">dev (at) opendal.apache.org</entry>
 		<entry key="OPENMEETINGS">dev (at) openmeetings.apache.org</entry>
 		<entry key="OWB">dev (at) openwebbeans.apache.org</entry>
 		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
