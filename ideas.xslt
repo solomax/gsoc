@@ -44,6 +44,7 @@
 		<entry key="STREAMPIPES">dev (at) streampipes.apache.org</entry>
 		<entry key="TEACLAVE">dev (at) teaclave.apache.org</entry>
 		<entry key="TRAFFICCONTROL">dev (at) trafficcontrol.apache.org</entry>
+		<entry key="UIMA">dev (at) uima.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">
