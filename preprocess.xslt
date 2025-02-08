@@ -55,6 +55,9 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'ROCKETMQ'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Seata']) &gt; 0">
+						<xsl:value-of select="'SEATA'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'SeaTunnel']) &gt; 0">
 						<xsl:value-of select="'SEATUNNEL'"/>
 					</xsl:when>
@@ -115,6 +118,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'RocketMQ']) &gt; 0">
 						<xsl:value-of select="'RocketMQ'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Seata']) &gt; 0">
+						<xsl:value-of select="'Seata'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'SeaTunnel']) &gt; 0">
 						<xsl:value-of select="'SeaTunnel'"/>

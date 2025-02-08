@@ -37,6 +37,7 @@
 		<entry key="OPENMEETINGS">dev (at) openmeetings.apache.org</entry>
 		<entry key="OWB">dev (at) openwebbeans.apache.org</entry>
 		<entry key="ROCKETMQ">dev (at) rocketmq.apache.org</entry>
+		<entry key="SEATA">dev (at) seata.apache.org</entry>
 		<entry key="SEATUNNEL">dev (at) seatunnel.apache.org</entry>
 		<entry key="SHARDINGSPHERE">dev (at) shardingsphere.apache.org</entry>
 		<entry key="SHENYU">dev (at) shenyu.apache.org</entry>
