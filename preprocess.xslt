@@ -31,6 +31,9 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Beam']) &gt; 0">
 						<xsl:value-of select="'BEAM'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'CloudStack']) &gt; 0">
+						<xsl:value-of select="'CLOUDSTACK'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'CouchDB']) &gt; 0">
 						<xsl:value-of select="'COUCHDB'"/>
 					</xsl:when>
@@ -43,11 +46,17 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
 						<xsl:value-of select="'EVENTMESH'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HugeGraph']) &gt; 0">
+						<xsl:value-of select="'HUGEGRAPH'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IOTDB'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Kvrocks']) &gt; 0">
 						<xsl:value-of select="'KVROCKS'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'LuceneNet']) &gt; 0">
+						<xsl:value-of select="'LUCENENET'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
 						<xsl:value-of select="'OPENDAL'"/>
@@ -95,6 +104,9 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Beam']) &gt; 0">
 						<xsl:value-of select="'Beam'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'CloudStack']) &gt; 0">
+						<xsl:value-of select="'CloudStack'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'CouchDB']) &gt; 0">
 						<xsl:value-of select="'CouchDB'"/>
 					</xsl:when>
@@ -107,11 +119,17 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
 						<xsl:value-of select="'EventMesh'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HugeGraph']) &gt; 0">
+						<xsl:value-of select="'HugeGraph'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IoTDB'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Kvrocks']) &gt; 0">
 						<xsl:value-of select="'Kvrocks'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'LuceneNet']) &gt; 0">
+						<xsl:value-of select="'Lucene.NET'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
 						<xsl:value-of select="'OpenDAL'"/>

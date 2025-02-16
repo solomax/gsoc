@@ -26,9 +26,11 @@
 		<entry key="FINCN">dev (at) fineract.apache.org</entry>
 		<entry key="GORA">dev (at) gora.apache.org</entry>
 		<entry key="HUDI">dev (at) hudi.apache.org</entry>
+		<entry key="HUGEGAPH">dev (at) hugegraph.apache.org</entry>
 		<entry key="IOTDB">dev (at) iotdb.apache.org</entry>
 		<entry key="JAMES">dev (at) james.apache.org</entry>
 		<entry key="KVROCKS">dev (at) kvrocks.apache.org</entry>
+		<entry key="LUCENENET">dev (at) lucenenet.apache.org</entry>
 		<entry key="MATH">dev (at) commons.apache.org</entry>
 		<entry key="NEMO">dev (at) nemo.apache.org</entry>
 		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
