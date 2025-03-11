@@ -46,6 +46,9 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
 						<xsl:value-of select="'EVENTMESH'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HertzBeat']) &gt; 0">
+						<xsl:value-of select="'HERTZBEAT'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HugeGraph']) &gt; 0">
 						<xsl:value-of select="'HUGEGRAPH'"/>
 					</xsl:when>
@@ -57,6 +60,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'LuceneNet']) &gt; 0">
 						<xsl:value-of select="'LUCENENET'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Mahout']) &gt; 0">
+						<xsl:value-of select="'MAHOUT'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
 						<xsl:value-of select="'OPENDAL'"/>
@@ -119,6 +125,9 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'EventMesh']) &gt; 0">
 						<xsl:value-of select="'EventMesh'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HertzBeat']) &gt; 0">
+						<xsl:value-of select="'HertzBeat'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HugeGraph']) &gt; 0">
 						<xsl:value-of select="'HugeGraph'"/>
 					</xsl:when>
@@ -130,6 +139,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'LuceneNet']) &gt; 0">
 						<xsl:value-of select="'Lucene.NET'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Mahout']) &gt; 0">
+						<xsl:value-of select="'Mahout'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
 						<xsl:value-of select="'OpenDAL'"/>
