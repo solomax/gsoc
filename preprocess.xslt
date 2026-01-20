@@ -14,7 +14,7 @@
 	<xsl:function name="gsoc:getHref">
 		<xsl:param name="name" as="xs:string"/>
 		<xsl:sequence
-			select="gsoc:prepTitle(replace(concat('#GSoC2025Ideaslist-', $name), ' ', ''))" />
+			select="gsoc:prepTitle(replace(concat('#GSoC2026Ideaslist-', $name), ' ', ''))" />
 	</xsl:function>
 	<xsl:template match="/">
 	<rss>
