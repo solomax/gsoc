@@ -24,6 +24,7 @@
 		<entry key="EVENTMESH">dev (at) eventmesh.apache.org</entry>
 		<entry key="FINERACT">dev (at) fineract.apache.org</entry>
 		<entry key="FINCN">dev (at) fineract.apache.org</entry>
+		<entry key="FORY">dev (at) fory.apache.org</entry>
 		<entry key="GORA">dev (at) gora.apache.org</entry>
 		<entry key="HERTZBEAT">dev (at) hertzbeat.apache.org</entry>
 		<entry key="HUDI">dev (at) hudi.apache.org</entry>
