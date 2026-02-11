@@ -51,6 +51,7 @@
 		<entry key="TEACLAVE">dev (at) teaclave.apache.org</entry>
 		<entry key="TRAFFICCONTROL">dev (at) trafficcontrol.apache.org</entry>
 		<entry key="UIMA">dev (at) uima.apache.org</entry>
+		<entry key="WAYANG">dev (at) wayang.apache.org</entry>
 	</xsl:variable>
 
 	<xsl:template match="/">
