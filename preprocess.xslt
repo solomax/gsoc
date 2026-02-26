@@ -49,6 +49,9 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'fory']) &gt; 0">
 						<xsl:value-of select="'FORY'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'grails']) &gt; 0">
+						<xsl:value-of select="'GRAILS'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HertzBeat']) &gt; 0">
 						<xsl:value-of select="'HERTZBEAT'"/>
 					</xsl:when>
@@ -130,6 +133,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'fory']) &gt; 0">
 						<xsl:value-of select="'Apache Fory'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'grails']) &gt; 0">
+						<xsl:value-of select="'Apache Grails'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HertzBeat']) &gt; 0">
 						<xsl:value-of select="'HertzBeat'"/>
