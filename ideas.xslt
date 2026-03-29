@@ -21,6 +21,7 @@
 		<entry key="COUCHDB">dev (at) couchdb.apache.org</entry>
 		<entry key="DOLPHINSCHEDULER">dev (at) dolphinscheduler.apache.org</entry>
 		<entry key="DORIS">dev (at) doris.apache.org</entry>
+		<entry key="DUBBO">dev (at) dubbo.apache.org</entry>
 		<entry key="EVENTMESH">dev (at) eventmesh.apache.org</entry>
 		<entry key="FINERACT">dev (at) fineract.apache.org</entry>
 		<entry key="FINCN">dev (at) fineract.apache.org</entry>
