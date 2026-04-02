@@ -64,6 +64,9 @@
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HugeGraph']) &gt; 0">
 						<xsl:value-of select="'HUGEGRAPH'"/>
 					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'iceberg']) &gt; 0">
+						<xsl:value-of select="'ICEBERG'"/>
+					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IOTDB'"/>
 					</xsl:when>
@@ -154,6 +157,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'HugeGraph']) &gt; 0">
 						<xsl:value-of select="'HugeGraph'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'iceberg']) &gt; 0">
+						<xsl:value-of select="'Apache Iceberg'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'IoTDB']) &gt; 0">
 						<xsl:value-of select="'IoTDB'"/>

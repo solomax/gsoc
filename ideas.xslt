@@ -33,6 +33,7 @@
 		<entry key="HTTPD">dev (at) httpd.apache.org</entry>
 		<entry key="HUDI">dev (at) hudi.apache.org</entry>
 		<entry key="HUGEGAPH">dev (at) hugegraph.apache.org</entry>
+		<entry key="ICEBERG">dev (at) iceberg.apache.org</entry>
 		<entry key="IOTDB">dev (at) iotdb.apache.org</entry>
 		<entry key="JAMES">dev (at) james.apache.org</entry>
 		<entry key="KVROCKS">dev (at) kvrocks.apache.org</entry>
