@@ -244,10 +244,10 @@
 						<xsl:value-of select="'~90 hours (small)'"/>
 					</xsl:when>
 					<xsl:when test="count(labels/label[text() = 'medium']) &gt; 0">
-						<xsl:value-of select="'~175 hour (medium)'"/>
+						<xsl:value-of select="'~175 hours (medium)'"/>
 					</xsl:when>
 					<xsl:otherwise>
-						<xsl:value-of select="'~350 hour (large)'"/>
+						<xsl:value-of select="'~350 hours (large)'"/>
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
