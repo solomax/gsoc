@@ -107,6 +107,9 @@
 			<xsl:for-each select="current-group()">
 				<div class="item" style="{$style-item}">
 					<h3 id="{summary/@href}" style="{$style-item_h3}"><a href="{link/text()}"><xsl:value-of select="summary/text()"/></a></h3> <!-- {key/text()} -->
+					<xsl:if test="string-length(size/text()) = 0">
+						<p style="color: red; font: bold;">Project size missing! Please add appropriate label (small/medium/large)</p>
+					</xsl:if>
 					<div class="desc" style="{$style-item_desc}">
 						<xsl:value-of select="description" disable-output-escaping="yes"/>
 					</div>
