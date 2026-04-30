@@ -60,8 +60,24 @@
 		<xsl:for-each-group select="item" group-by="project/@key">
 			<li><a href="{project/@href}"><xsl:value-of select="project/text()"/></a></li>
 			<xsl:for-each select="current-group()">
+				<xsl:variable name="projectSize">
+					<xsl:choose>
+						<xsl:when test="count(labels/label[text() = 'small']) &gt; 0">
+							<xsl:value-of select="' (S)'"/>
+						</xsl:when>
+						<xsl:when test="count(labels/label[text() = 'medium']) &gt; 0">
+							<xsl:value-of select="' (M)'"/>
+						</xsl:when>
+						<xsl:when test="count(labels/label[text() = 'large']) &gt; 0">
+							<xsl:value-of select="' (L)'"/>
+						</xsl:when>
+					</xsl:choose>
+				</xsl:variable>
 			<ul>
-				<li><a href="{summary/@href}"><xsl:value-of select="summary/text()"/></a></li>
+				<li><a href="{summary/@href}">
+					<xsl:value-of select="summary/text()"/>
+					<xsl:value-of select="$projectSize"/>
+				</a></li>
 			</ul>
 			</xsl:for-each>
 		</xsl:for-each-group>

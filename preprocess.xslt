@@ -162,7 +162,10 @@
 			</xsl:variable>
 			<xsl:variable name="projectSize">
 				<xsl:choose>
-					<xsl:when test="count(labels/label[text() = 'part-time']) &gt; 0">
+					<xsl:when test="count(labels/label[text() = 'small']) &gt; 0">
+						<xsl:value-of select="'~90 hours (small)'"/>
+					</xsl:when>
+					<xsl:when test="count(labels/label[text() = 'medium']) &gt; 0">
 						<xsl:value-of select="'~175 hour (medium)'"/>
 					</xsl:when>
 					<xsl:otherwise>
