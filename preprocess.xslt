@@ -14,7 +14,7 @@
 	<xsl:function name="gsoc:getHref">
 		<xsl:param name="name" as="xs:string"/>
 		<xsl:sequence
-			select="gsoc:prepTitle(replace(concat('#GSoC2026Ideaslist-', $name), ' ', ''))" />
+			select="gsoc:prepTitle(replace(concat('#GSoC2027Ideaslist-', $name), ' ', ''))" />
 	</xsl:function>
 	<xsl:template match="/">
 	<rss>
@@ -78,6 +78,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Mahout']) &gt; 0">
 						<xsl:value-of select="'MAHOUT'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'maven']) &gt; 0">
+						<xsl:value-of select="'MAVEN'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
 						<xsl:value-of select="'OPENDAL'"/>
@@ -172,6 +175,9 @@
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'Mahout']) &gt; 0">
 						<xsl:value-of select="'Mahout'"/>
+					</xsl:when>
+					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'maven']) &gt; 0">
+						<xsl:value-of select="'Maven'"/>
 					</xsl:when>
 					<xsl:when test="project/@key='GSOC' and count(labels/label[text() = 'OpenDAL']) &gt; 0">
 						<xsl:value-of select="'OpenDAL'"/>

@@ -2,12 +2,13 @@
 	<xsl:output method="html"/>
 
 	<!-- styles -->
-	<xsl:variable name="style-toc-container" select="'background-color: #cccccc;'" />
-	<xsl:variable name="style-item" select="'padding: 10px;'" />
-	<xsl:variable name="style-item_h3" select="'border-bottom: 1px solid #cccccc;'" />
-	<xsl:variable name="style-item_desc" select="'padding: 20px 0;'" />
-	<xsl:variable name="style-item_actions" select="'padding-left: 30px;'" />
-	<xsl:variable name="style-item_actions_mentors" select="'padding-left: 30px;'" />
+	<xsl:variable name="style-toc-container" select="'background-color: var(--ds-background-overlay)'" />
+	<xsl:variable name="style-danger" select="'color: red; font-weight: bold'" />
+	<xsl:variable name="style-item" select="'padding: 10px'" />
+	<xsl:variable name="style-item_h3" select="'border-bottom: 1px solid #cccccc'" />
+	<xsl:variable name="style-item_desc" select="'padding: 20px 0'" />
+	<xsl:variable name="style-item_actions" select="'padding-left: 30px'" />
+	<xsl:variable name="style-item_actions_mentors" select="'padding-left: 30px'" />
 
 	<!-- project emails -->
 	<xsl:variable name="emails">
@@ -40,6 +41,7 @@
 		<entry key="LUCENENET">dev (at) lucenenet.apache.org</entry>
 		<entry key="MATH">dev (at) commons.apache.org</entry>
 		<entry key="MAHOUT">dev (at) mahout.apache.org</entry>
+		<entry key="MAVEN">dev (at) maven.apache.org</entry>
 		<entry key="NEMO">dev (at) nemo.apache.org</entry>
 		<entry key="NUMBERS">dev (at) commons.apache.org</entry>
 		<entry key="NUTTX">dev (at) nuttx.apache.org</entry>
@@ -69,7 +71,7 @@
 	</xsl:template>
 	
 	<xsl:template match="rss/channel" mode="toc">
-	<p style="color: red; font: bold;">This page is auto-generated! Please do NOT edit it, all changes will be lost on next update</p>
+	<p style="{$style-danger}">This page is auto-generated! Please do NOT edit it, all changes will be lost on next update</p>
 	<div id="toc_container" style="{$style-toc-container}">
 	<p class="toc_title">Contents</p>
 	<ul class="toc_list">
@@ -108,7 +110,7 @@
 				<div class="item" style="{$style-item}">
 					<h3 id="{summary/@href}" style="{$style-item_h3}"><a href="{link/text()}"><xsl:value-of select="summary/text()"/></a></h3> <!-- {key/text()} -->
 					<xsl:if test="string-length(size/text()) = 0">
-						<p style="color: red; font: bold;">Project size missing! Please add appropriate label (small/medium/large)</p>
+						<p style="{$style-danger}">Project size missing! Please add appropriate label (small/medium/large)</p>
 					</xsl:if>
 					<div class="desc" style="{$style-item_desc}">
 						<xsl:value-of select="description" disable-output-escaping="yes"/>
