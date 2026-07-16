@@ -2,7 +2,7 @@
 	<xsl:output method="html"/>
 
 	<!-- styles -->
-	<xsl:variable name="style-toc-container" select="'background-color: var(--ds-background-overlay)'" />
+	<xsl:variable name="style-toc-container" select="'background-color: var(--ds-background-neutral)'" />
 	<xsl:variable name="style-danger" select="'color: red; font-weight: bold'" />
 	<xsl:variable name="style-item" select="'padding: 10px'" />
 	<xsl:variable name="style-item_h3" select="'border-bottom: 1px solid #cccccc'" />
